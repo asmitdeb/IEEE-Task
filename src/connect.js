@@ -1,5 +1,6 @@
+const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
-const connect = mongoose.connect("mongodb://localhost:27017/SignupPage");
+const connect = mongoose.connect(process.env.MONGO_URL);
 connect.then(() => {
     console.log("Database connected successfully");
 })
