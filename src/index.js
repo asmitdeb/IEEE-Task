@@ -29,11 +29,12 @@ app.post("/signup", async (req, res) => {
     const userExists = await collection.findOne({email: data.email});
     
     if(userExists){
-        res.send("Account already exists");
+        res.sendFile('public/accexists.html', {root: './'})
     }
     else{
         const userdata = await collection.insertMany(data);
         console.log(userdata);
+        res.sendFile('public/accreated.html', {root: './'})
     }
 
 });
@@ -43,18 +44,18 @@ app.post("/login", async (req, res) => {
     try{
         const check = await collection.findOne({email: req.body.email});
         if(!check){
-            res.send("User not found");
+            res.sendFile('public/notfound.html', {root: './'});
         }
         else{
         const equals = (req.body.pass === check.password);
         if(equals){
-            res.send("Login successful!");
+            res.sendFile('public/home.html', {root: './'})
         }
         else{
-            res.send("Wrong Password");
+            res.sendFile('public/wrongpass.html', {root: './'})
         }}
     }catch{
-        res.send("Wrong Details");
+        res.sendFile('public/error.html', {root: './'})
     }
 });
 
