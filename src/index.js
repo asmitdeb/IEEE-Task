@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: false}));
 // app.use(express.static(__dirname + '/../public'));
 
 app.get("/", (req, res) => {
-    res.sendFile('public/index.html', {root: './'})
+    res.sendFile('public/signin.html', {root: './'})
 });
 
 app.use(express.static(__dirname + '/../public'));
