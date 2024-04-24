@@ -12,6 +12,6 @@
   "name": "ieee-task",
   "description": "IEEE JUSB Tech Team Task Sign up and Login Page with backend authentication",
   "version": "1.0.0",
-  "engines": {"node": "21.x"},
+  "engines": {"node": "20.x"},
   "type": "module"
 }
