@@ -6,9 +6,11 @@
     "mongoose": "^8.3.2"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "name": "ieee-task",
   "description": "IEEE JUSB Tech Team Task Sign up and Login Page with backend authentication",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "main": "index.js"
 }

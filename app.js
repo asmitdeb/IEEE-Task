@@ -6,11 +6,12 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-// app.use(cors());
 
 app.use(express.urlencoded({extended: false})); //needed?
-// app.use(express.static(__dirname + '/../public'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "hbs");
+
 
 app.get("/", (req, res) => {
     res.sendFile('public/signin.html', {root: './'})
@@ -100,3 +101,4 @@ app.post("/login", async (req, res) => {
 app.listen(port, () => {
     console.log('Server running on port: ${port}');
 })
+
