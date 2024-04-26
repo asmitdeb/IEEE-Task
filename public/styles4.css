@@ -2,7 +2,6 @@
 
 body {
     font-family: "Roboto","Georgia", "Times New Roman", Times, serif;
-    /* background-color: #f4f1ea; */
     background-color: #f7cad0;
     color: black;
     margin: 0;
@@ -21,74 +20,9 @@ body {
     margin-bottom: 20px;
     text-align: center;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  input,
-  button {
-    font-family: "Georgia", "Times New Roman", Times, serif;
-    font-size: 18px;
-    margin: 5px;
-  }
-  
-  button {
-    background-color: #8b7355;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #704438;
-  }
-  
-  .recipe-list {
-    display: flex;
-    /* grid-template-columns: repeat(auto-fill, minmax(250px)); */
-    gap: 50px;
-    list-style: none;
-    padding: 0;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-  }
-  .recipe-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    height: 200px;
-  }
-  
-  .recipe-title {
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-weight: 100;
-  }
-  
-  .recipe-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-  
-  a {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #4c4c4c;
-  }
+   
   li {
     list-style-type: none;
   }
   
-  a:hover {
-    text-decoration: underline;
-  }
+  
